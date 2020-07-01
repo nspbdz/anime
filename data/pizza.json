@@ -1,104 +1,89 @@
 {
-  "menu": [{
+  "menu": [
+    {
       "id": "1",
+      "hariupdate":"selasa",
+      "tanggalupload": "12,dec,2020",
       "kategori": "pizza",
-      "episode": "episode1",
+      "episode" : [
+        "https://stackoverflow.com/questions/53993336/whats-the-alternative-for-file-get-contents-in-laravel",
+        "https://github.com/guzzle/guzzle"
+
+      ],
       "update": "senin",
       "nama": "Meat Lover",
       "deskripsi": "Irisan sosis sapi, pi cincang, burger sapi, sosis ayam.",
-      "ongoing": "ya",
+      "status": "ongoing",
+      "genre":"anime,live",
       "harga": 49500,
-      "gambar": "meat-lover.jpg"
+      "gambar": "meat-lover.jpg",
+      "produser": "kadokawa",
+      "studio": "kento",
+      "tipe": "TV"
     },
 
     {
       "id": "2",
+      "hariupdate":"selasa",
+      "tanggalupload": "12,dec,2020",
       "kategori": "pizza",
-      "episode": "episode1",
+      "episode" : [
+        "https://stackoverflow.com/questions/53993336/whats-the-alternative-for-file-get-contents-in-laravel",
+        "https://github.com/guzzle/guzzle"
+
+      ],
       "update": "senin",
       "nama": "Super Supreme",
       "deskripsi": "Daging ayam dan sapi asap, daging sapi cincang, burger sapi, jamur, paprika merah dan paprika hijau.",
-
+      "status": "ongoing",
+      "genre":"anime,live",
       "harga": 49500,
-      "gambar": "supreme.jpg"
+      "gambar": "supreme.jpg",
+      "produser": "kadokawa",
+      "studio": "kento",
+      "tipe": "TV"
     },
     {
       "id": "3",
+      "hariupdate":"selasa",
+      "tanggalupload": "12,dec,2020",
       "kategori": "pizza",
-      "episode": "episode1",
+      "episode" : [
+        "https://stackoverflow.com/questions/53993336/whats-the-alternative-for-file-get-contents-in-laravel",
+        "https://github.com/guzzle/guzzle"
+
+      ],
       "update": "senin",
       "nama": "Tuna Melt",
+      "status": "ongoing",
+      "genre":"anime,live",
       "deskripsi": "Irisan daging ikan tuna, butiran jagung, saus mayonnaise.",
-
       "harga": 49500,
-      "gambar": "tuna-melt.jpg"
+      "gambar": "tuna-melt.jpg",
+      "produser": "kadokawa",
+      "studio": "kento",
+      "tipe": "TV"
     },
     {
       "id": "4",
+      "hariupdate":"selasa",
+       "tanggalupload": "12,dec,2020",
       "kategori": "pizza",
-      "episode": "episode1",
+      "episode" : [
+        "https://stackoverflow.com/questions/53993336/whats-the-alternative-for-file-get-contents-in-laravel",
+        "https://github.com/guzzle/guzzle"
+
+      ],
       "update": "senin",
+      "status": "ongoing",
+      "genre":"anime,live",
       "nama": "American Favourite",
       "deskripsi": "Pepperoni sapi, daging sapi cincang, jamur.",
-
       "harga": 49500,
-      "gambar": "american-favourite.jpg"
-    },
-    {
-      "id": "5",
-      "kategori": "pasta",
-      "episode": "episode1",
-      "update": "senin",
-      "nama": "Beef Spaghetti",
-      "deskripsi": "Pepperoni sapi, daging sapi cincang, jamur.",
-
-      "harga": 43000,
-      "gambar": "beef-spaghetti.jpg"
-    },
-    {
-      "id": "6",
-      "kategori": "pasta",
-      "episode": "episode1",
-      "update": "senin",
-      "nama": "Beef Lasagna",
-      "deskripsi": "Dipanggang, daging sapi cincang. krim putih lembut di tiap lapisan.",
-
-      "harga": 48000,
-      "gambar": "beef-lasagna.jpg"
-    },
-    {
-      "id": "6",
-      "kategori": "pasta",
-      "episode": "episode1",
-      "update": "senin",
-      "nama": "Creamy Beef Fettuccine",
-      "deskripsi": "Daging sapi asap dan jamur, ditumis dengan saus krim lembut.",
-
-      "harga": 43000,
-      "gambar": "creamy-beef-fettuccine.jpg"
-    },
-    {
-      "id": "7",
-      "kategori": "nasi",
-      "episode": "episode1",
-      "update": "senin",
-      "nama": "Meatballs Beef Mushroom",
-      "deskripsi": "Bola daging sapi dengan saus daging sapi cincang dan jamur.",
-
-      "harga": 40000,
-      "gambar": "meatballs-beef-mushroom.jpg"
-    },
-    {
-      "id": "8",
-      "kategori": "nasi",
-      "episode": "episode1",
-      "update": "senin",
-      "nama": "Black Pepper Chicken",
-      "deskripsi": "Ayam dengan saus lada hitam.",
-
-      "harga": 40000,
-      "gambar": "black-pepper-chicken.jpg"
+      "gambar": "american-favourite.jpg",
+      "produser": "kadokawa",
+      "studio": "kento",
+      "tipe": "TV"
     }
-
   ]
 }
