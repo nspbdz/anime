@@ -1,134 +1,90 @@
+<?= include('header.php') ?>
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Header End -->
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Hello, hut!</title>
-  </head>
-  <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="div container">
-  
-  <a class="navbar-brand" href="#">
-  <img src="img/logo.png" width="120" >
-   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">All menu
-  </div>
+    <!-- Breadcrumb Section Begin -->
+<section class="breadcrumb-section set-bg spad" data-setbg="img/breadcrumb-bg.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="breadcrumb-text">
+                    <h3><span>On Going Anime</span></h3>
+                    <div class="bt-option">
+                        <a href="/">Home</a>
+                        <span>On Going</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</nav>
+</section>
+                <?php
+    $data = file_get_contents('data/pizza.json');
+    $menu = json_decode($data, true);
 
-<div class="container">
+    // var_dump($menu) 
 
-<div class="row">
+    $menu = $menu["menu"];
+    // echo $menu[0]["nama"];
+    ?>
 
-<div class="col">
+<!-- Categories Grid Section Begin -->
+<section class="categories-grid-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 p-0">
+              <div class="row">
 
-<h1>all menu</h1>
-<?php 
-$data = file_get_contents('pizza.json');
-$menu = json_decode($data,true);
+                <?= 
+            $i=0; 
 
-// var_dump($menu) 
+                 foreach ($menu as $row) {
+                    if($i==2) break;
+                 
+                 
+                 ?>
 
-$menu = $menu["menu"];
-// echo $menu[0]["nama"];
-?>
-</div>
+                <a href="detail.php?id=<?= $i; ?>">
+              <div class="col-lg-6">
+                  <div class="cg-item">
 
-</div>
-<div class="row">
-<?php foreach ($menu as $row) : ?>
-<div class="col-md-4">
-<div class="card mb-3" >
-  <img class="card-img-top" src="img/pizza/<?= $row["gambar"];?>" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title"><?= $row["nama"];?></h5>
-    <p class="card-text"><?= $row["deskripsi"];?></p>
-    <h5 class="card-title">Rp.<?= $row["harga"];?></h5>
+                        <img src="img/pizza/<?= $row["gambar"]; ?>" alt="">
 
-    <a href="#" class="btn btn-primary">pesan sekarang</a>
-  </div>
-</div>
-</div>
-<?php  endforeach; ?>
+                      </a>
 
-</div>
+                            <!-- <div class="cg-pic set-bg" data-setbg="img/categories-grid/cg-1.jpg"> -->
+                            </div>
+                            <div class="cg-text">
+                                <h5><a href="#"><?= $row[ 'nama']?></a></h5>
+                                <ul>
+                                    <li><i class="fa fa-clock-o"></i> <?= $row[ 'tanggalupload']?></li>
+                                </ul>
+                  <br>
+                            </div>
+                        </div>
+                    </div>
+                        
+                         <?= $i++; } ?>       
+  
+                                  <div class="pagination-item">
+                    <a href="#"><span>1</span></a>
+                    <a href="#"><span>2</span></a>
+                    <a href="#"><span>3</span></a>
+                    <a href="#"><span>Next</span></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-7">
+                <div class="sidebar-option">
+                    <div class="row">
+                        <div class="col-md-12">
+                        <x-partials.chatango/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Categories Grid Section End -->
 
-
-
-</div>
-
-
-
-
-
-
-<!-- show data 2 berdasarkan fitur ongoing -->
-
-<div class="container">
-
-<div class="row">
-
-<div class="col">
-
-<h1>all menu</h1>
-<?php 
-$data = file_get_contents('pizza.json');
-$menu = json_decode($data,true);
-
-// var_dump($menu) 
-
-$menu = $menu["menu"];
-// echo $menu[0]["nama"];
-?>
-</div>
-
-</div>
-<div class="row">
-<?php foreach ($menu as $row) :
-  if ($row['ongoing'] == 'ya'){
-?>
-<div class="col-md-4">
-<div class="card mb-3" >
-  <img class="card-img-top" src="img/pizza/<?= $row["gambar"];?>" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title"><?= $row["nama"];?></h5>
-    <p class="card-text"><?= $row["deskripsi"];?></p>
-    <h5 class="card-title">Rp.<?= $row["harga"];?></h5>
-
-    <a href="#" class="btn btn-primary">pesan sekarang</a>
-  </div>
-</div>
-</div>
-<?php } endforeach; ?>
-
-</div>
-
-
-
-</div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   
-
-
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
-</html>
+<?= include('footer.php') ?>

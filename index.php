@@ -204,7 +204,7 @@ function getInfo($id, $array) {
                 <div class="ip-item">
                     <div class="ip-pic">
 
-                    <a href="detail.php?id=<?= $i; ?>">
+                    <a href="detail.php?id=<?= $row["id"]; ?>">
 
                         <img src="img/pizza/<?= $row["gambar"]; ?>" alt="">
                     </div>

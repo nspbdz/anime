@@ -5,6 +5,7 @@
       "hariupdate":"selasa",
       "tanggalupload": "12,dec,2020",
       "kategori": "pizza",
+      "totalepisode":"1",
       "episode" : [
         "https://stackoverflow.com/questions/53993336/whats-the-alternative-for-file-get-contents-in-laravel",
         "https://github.com/guzzle/guzzle"
@@ -27,6 +28,7 @@
       "hariupdate":"selasa",
       "tanggalupload": "12,dec,2020",
       "kategori": "pizza",
+      "totalepisode":"1",
       "episode" : [
         "https://stackoverflow.com/questions/53993336/whats-the-alternative-for-file-get-contents-in-laravel",
         "https://github.com/guzzle/guzzle"
@@ -48,6 +50,7 @@
       "hariupdate":"selasa",
       "tanggalupload": "12,dec,2020",
       "kategori": "pizza",
+      "totalepisode":"1",
       "episode" : [
         "https://stackoverflow.com/questions/53993336/whats-the-alternative-for-file-get-contents-in-laravel",
         "https://github.com/guzzle/guzzle"
@@ -69,6 +72,7 @@
       "hariupdate":"selasa",
        "tanggalupload": "12,dec,2020",
       "kategori": "pizza",
+      "totalepisode":"1",
       "episode" : [
         "https://stackoverflow.com/questions/53993336/whats-the-alternative-for-file-get-contents-in-laravel",
         "https://github.com/guzzle/guzzle"

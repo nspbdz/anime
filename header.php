@@ -78,19 +78,7 @@
                 <div class="nav-menu">
                     <ul>
                         <li><a href="#"><span>Home</span></a></li>
-                        <!-- <li>
-                            <a href="#"><span>Pages <i class="fa fa-angle-down"></i></span></a>
-                            <ul class="dropdown">
-                                <li><a href="">Categories</a></li>
-                                <li><a href="">Categories grid</a></li>
-                                <li><a href="">Typography</a></li>
-                                <li><a href="">Post default</a></li>
-                                <li><a href="">Post gallery</a></li>
-                                <li><a href="">Post review</a></li>
-                                <li><a href="">Contact</a></li>
-                            </ul>
-                        </li> -->
-                        <!-- perbaikan -->
+                        
                         <li ><a href="animelist"><span>Anime List</span></a></li> 
                         <li ><a href="ongoing"><span>On Going</span></a></li>
                     </ul>
